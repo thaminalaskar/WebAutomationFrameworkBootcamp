@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name = "Amazon TestSuit parallel">
+
+    <parameter name="cloud" value="false"/>
+    <parameter name="envName" value="saucelabs"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="browserVersion" value="77.0"/>
+    <parameter name="url" value="https://www.amazon.com/"/>
+    <parameter name="platform" value="windows"/>
+
+
+    <test name="Amazon automation test">
+
+        <classes>
+      <class name="com.amazon.tests.addtocarttest.ChangeQuantityFromAddToCartTest"></class>
+
+        </classes>
+    </test>
+</suite>
