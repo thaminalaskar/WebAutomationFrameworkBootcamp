@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>amazon</artifactId>
+    <artifactId>facebook</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -22,7 +22,12 @@
             <artifactId>generic</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-
+        <dependency>
+            <groupId>com.peoplentech</groupId>
+            <artifactId>generic</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
 
 </project>
