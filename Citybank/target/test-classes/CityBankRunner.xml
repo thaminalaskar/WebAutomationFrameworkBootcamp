@@ -12,8 +12,8 @@
 
     <test name="CityBank automation test">
      <classes>
-<!--        <class name="com.LoginTest"></class>-->
-<!--         <class name="com.CreditCardTest"></class>-->
+<!--       <class name="com.LoginTest"></class>-->
+<!--        <class name="com.CreditCardTest"></class>-->
          <class name="com.citybank.creditcardsearch.CreditCardSearchTest"></class>
      </classes>
      
