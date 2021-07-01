@@ -13,6 +13,8 @@
         <module>Amazon</module>
         <module>Facebook</module>
         <module>Cnn</module>
+        <module>Citybank</module>
+        <module>RestAPI</module>
     </modules>
 
     <properties>

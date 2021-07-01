@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name = "CityBank TestSuit parallel">
+
+    <parameter name="cloud" value="false"/>
+    <parameter name="envName" value="saucelabs"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="browserVersion" value="77.0"/>
+    <parameter name="url" value="https://www.citi.com/"/>
+    <parameter name="platform" value="windows"/>
+
+
+    <test name="CityBank automation test">
+     <classes>
+<!--        <class name="com.LoginTest"></class>-->
+<!--         <class name="com.CreditCardTest"></class>-->
+         <class name="com.citybank.creditcardsearch.CreditCardSearchTest"></class>
+     </classes>
+     
+    </test>
+
+
+
+</suite>
