@@ -1,0 +1,6 @@
+2021-06-30 00:06:815 INFO  LoginTest:42 - User in home page for click on login button
+2021-06-30 00:06:798 INFO  LoginTest:42 - User Switch to another tab for log in
+2021-06-30 00:06:861 INFO  LoginTest:42 -  void user name enter
+2021-06-30 00:06:932 INFO  LoginTest:42 -  void password enter
+2021-06-30 00:06:233 INFO  LoginTest:42 - User click on login button
+2021-06-30 00:06:896 INFO  TestBase:242 - driver closed

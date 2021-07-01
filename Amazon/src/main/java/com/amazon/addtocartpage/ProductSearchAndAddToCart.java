@@ -43,7 +43,7 @@ public class ProductSearchAndAddToCart {
     }
 
     public boolean imageValidate(){
-        return msiLaptopImage.isDisplayed();
+       return msiLaptopImage.isDisplayed();
     }
 
     public void addToCartButton(){

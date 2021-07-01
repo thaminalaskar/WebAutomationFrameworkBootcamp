@@ -1,10 +1,10 @@
 package com.cnn.pages;
 
-import common.TestBase;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class PoliticesPage extends TestBase {
+public class PoliticesPage {
 
     @FindBy(xpath = "(//a[@name='politics'])[1]")
     WebElement politicesLink;

@@ -13,8 +13,16 @@
     <test name="Amazon automation test">
 
         <classes>
-      <class name="com.amazon.tests.addtocarttest.ChangeQuantityFromAddToCartTest"></class>
-
+            <class name="com.amazon.logintest.LoginTest"></class>
+            <class name="com.amazon.registrationtest.RegistrationTest"></class>
+            <class name="com.amazon.addtocarttest.ProductSearchAndAddToCartTest"></class>
+            <class name="com.amazon.searchtest.SearchTest"></class>
+            <class name="com.amazon.optionselectiontest.OptionSelectionTest"></class>
+            <class name="com.amazon.addtocarttest.ChangeQuantityFromAddToCartTest"></class>
+            <class name="com.amazon.navigatebacktest.NavigateBackTest"></class>
+            <class name="com.amazon.shopbydepartmenttest.ShopByDepartmentTest"></class>
+            <class name="com.amazon.menuoptiontest.MenuOptionsTest"></class>
+            <class name="com.amazon.logintest.LoginTest"></class>
         </classes>
     </test>
 </suite>

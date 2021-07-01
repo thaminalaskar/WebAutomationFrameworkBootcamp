@@ -1,10 +1,10 @@
 package com.cnn.pages;
 
-import common.TestBase;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class LoginPage extends TestBase {
+public class LoginPage  {
   @FindBy(xpath = "//header/div[1]/div[1]/div[1]/div[6]/div[1]/*[1]")
     WebElement userAccount ;
 

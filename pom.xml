@@ -15,6 +15,7 @@
         <module>Cnn</module>
         <module>Citybank</module>
         <module>RestAPI</module>
+        <module>Cigna</module>
     </modules>
 
     <properties>
