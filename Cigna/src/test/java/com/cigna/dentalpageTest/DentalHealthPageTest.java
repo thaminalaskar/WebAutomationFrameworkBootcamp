@@ -27,6 +27,5 @@ public class DentalHealthPageTest extends TestBase {
 
     }
 
-
-    }
+}
 
