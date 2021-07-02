@@ -13,10 +13,14 @@
     <test name="FaceBook automation test">
 
         <classes>
-         <class name="com.facebook.loginpagetest.CommentsOnPostTest"></class>
+            <!--         <class name="com.facebook.loginpagetest.LoginTest"></class>-->
+            <!--            <class name="com.facebook.loginpagetest.SignUpPageTest"></class>-->
+            <!--            <class name="com.facebook.loginpagetest.SearchForNameTest"></class>-->
+            <!--            <class name="com.facebook.loginpagetest.CommentsOnPostTest"></class>-->
+                  <class name="com.facebook.loginpagetest.SendAFriendRequestTest"></class>
+<!--         <class name="com.facebook.loginpagetest.CommentsOnPostTest"></class>-->
         </classes>
     </test>
-
 
 
 </suite>
