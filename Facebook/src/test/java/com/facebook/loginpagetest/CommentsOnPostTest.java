@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 import reporting.ExtentTestManager;
 
 public class CommentsOnPostTest extends TestBase {
-    private static final Logger logger = Logger.getLogger(CommentsOnPostTest.class);
+    private static final Logger logger = Logger.getLogger(com.facebook.loginpagetest.CommentsOnPostTest.class);
     CommentsOnPost commentsOnPost;
 
     @Test

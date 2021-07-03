@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 import reporting.ExtentTestManager;
 
 public class LoginTest extends TestBase {
-    private static final Logger logger = Logger.getLogger(LoginTest.class);
+    private static final Logger logger = Logger.getLogger(com.facebook.loginpagetest.LoginTest.class);
     LoginPage loginPage;
 
     //Positive Test

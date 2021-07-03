@@ -1,103 +1,78 @@
 package com.facebook.loginpagetest;
 
+import com.facebook.dataprovidertest.DataProviderTest;
+import com.facebook.pages.SignUpPage;
 import common.TestBase;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
+import org.apache.log4j.Logger;
+import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+import reporting.ExtentTestManager;
 
 public class SignUpPageTest extends TestBase {
-    @FindBy(xpath = "//a[contains(text(),'Sign Up')]")
-    private WebElement signUpLink;
+    private static final Logger logger = Logger.getLogger(com.facebook.loginpagetest.SignUpPageTest.class);
+    SignUpPage signUpPage;
 
-    @FindBy(xpath = "//div[contains(text(),'Create a New Account')]")
-    private WebElement createAccountText;
-
-    @FindBy(xpath = "//input[@name='firstname']")
-    private WebElement firstName;
-
-    @FindBy(xpath = "//input[@name='lastname']")
-    private WebElement lastName;
-
-    @FindBy(xpath = "//input[@name='reg_email__']")
-    private WebElement mobileAndEmail;
-
-    @FindBy(xpath = "//input[@id='password_step_input']")
-    private WebElement newPassword;
-
-    @FindBy(xpath = "//select[@id='month']")
-    private WebElement month;
-
-    @FindBy(xpath = "//select[@id='day']")
-    private WebElement day;
-
-    @FindBy(xpath = "//select[@id='year']")
-    private WebElement year;
-
-    @FindBy(xpath = "(//input[@name='sex'])[1]")
-    private WebElement femaleRadioButton;
-    @FindBy(xpath = "(//input[@name='sex'])[1]")
-    private WebElement maleRadioButton;
-    @FindBy(xpath = "(//input[@name='sex'])[1]")
-    private WebElement customRadioButton;
-
-
-    @FindBy(xpath = "//div[@class='_1lch']/button")
-    private WebElement signUpButton;
-
-
-    public void firstName(String firstNames) {
-        firstName.sendKeys(firstNames);
+    @Test(dataProviderClass = DataProviderTest.class,dataProvider = "getDataForRegistrationTest")
+    public void createAccountPageTest(String firstName, String lastName , String mobileNumber , String newPassword){
+        signUpPage = PageFactory.initElements(driver,SignUpPage.class);
+        windowsFullPageScrollDown();
+        signUpPage.signUpLinks();
+        signUpPage.firstName(firstName);
+        ExtentTestManager.log(firstName+" Enter in text field",logger);
+        signUpPage.lastName(lastName);
+        ExtentTestManager.log(lastName+" Enter in text field",logger);
+        signUpPage.mobileNumber(mobileNumber);
+        ExtentTestManager.log(mobileNumber+" Enter in text field",logger);
+        signUpPage.newPassword(newPassword);
+        ExtentTestManager.log(newPassword+" Enter in text field",logger);
+        signUpPage.monthDropDown();
+        ExtentTestManager.log("User change month",logger);
+        signUpPage.dayDropDown();
+        ExtentTestManager.log("User change day",logger);
+        signUpPage.yearDropDown();
+        ExtentTestManager.log("User change year",logger);
+        signUpPage.genderSelectForFemale();
+        ExtentTestManager.log("User change as female",logger);
+        signUpPage.signUpButton();
+        Assert.assertTrue(signUpPage.signUpButtonDisplay());
+        Assert.assertTrue(signUpPage.createAccountText());
+        String expectedTitle = signUpPage.signUpPageTitle();
+        String actualTitle = "Sign Up for Facebook | Facebook";
+        Assert.assertEquals(expectedTitle,actualTitle,"Title did not match");
+        ExtentTestManager.log("User got title as expected",logger);
+        sleepFor(5);
     }
 
-    public void lastName(String lastNames) {
-        lastName.sendKeys(lastNames);
+    @Test(dataProviderClass = DataProviderTest.class,dataProvider = "getDataForRegistrationTest")
+    public void createAccountPageforValidteUserTest(String firstName, String lastName , String mobileNumber , String newPassword){
+         signUpPage = PageFactory.initElements(driver,SignUpPage.class);
+        windowsFullPageScrollDown();
+        signUpPage.signUpLinks();
+        signUpPage.firstName(firstName);
+        ExtentTestManager.log(firstName+" Enter in text field",logger);
+        signUpPage.lastName(lastName);
+        ExtentTestManager.log(lastName+" Enter in text field",logger);
+        signUpPage.mobileNumber(mobileNumber);
+        ExtentTestManager.log(mobileNumber+" Enter in text field",logger);
+        signUpPage.newPassword(newPassword);
+        ExtentTestManager.log(newPassword+" Enter in text field",logger);
+        signUpPage.monthDropDown();
+        ExtentTestManager.log("User change month",logger);
+        signUpPage.dayDropDown();
+        ExtentTestManager.log("User change day",logger);
+        signUpPage.yearDropDown();
+        ExtentTestManager.log("User change year",logger);
+        signUpPage.genderSelectForMale();
+        ExtentTestManager.log("User change as male",logger);
+        signUpPage.signUpButton();
+        Assert.assertTrue(signUpPage.signUpButtonDisplay());
+        Assert.assertTrue(signUpPage.createAccountText());
+        String expectedTitle = signUpPage.signUpPageTitle();
+        String actualTitle = "Sign Up for Facebook | Facebook";
+        Assert.assertEquals(expectedTitle,actualTitle,"Title did not match");
+        ExtentTestManager.log("User got title as expected",logger);
+        sleepFor(5);
     }
-
-    public void mobileNumber(String mobileNumber) {
-        mobileAndEmail.sendKeys(mobileNumber);
-    }
-
-    public void newPassword(String newPasswords) {
-        newPassword.sendKeys(newPasswords);
-    }
-
-    public void monthDropDown() {
-        selectByVisibleText(month, "Mar");
-    }
-
-    public void dayDropDown() {
-        selectByVisibleText(day, "6");
-    }
-
-    public void yearDropDown() {
-        selectByVisibleText(year, "2006");
-    }
-
-    public void signUpLinks() {
-        signUpLink.click();
-    }
-
-    public void genderSelectForFemale() {
-        femaleRadioButton.click();
-    }
-    public void genderSelectForMale() {
-        maleRadioButton.click();
-    }
-    public void genderSelectForCustom() {
-        customRadioButton.click();
-    }
-
-    public void signUpButton() {
-        signUpButton.click();
-    }
-    public boolean signUpButtonDisplay() {
-        return signUpButton.isDisplayed();
-    }
-    public boolean createAccountText() {
-        return createAccountText.isDisplayed();
-    }
-    public String signUpPageTitle() {
-        return getTitle();
-    }
-
 
 }

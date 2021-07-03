@@ -10,13 +10,13 @@ import org.testng.annotations.Test;
 import reporting.ExtentTestManager;
 
 public class LikeOnPostTest extends TestBase {
-    private static final Logger logger = Logger.getLogger(LikeOnPostTest.class);
+    private static final Logger logger = Logger.getLogger(com.facebook.loginpagetest.LikeOnPostTest.class);
     LoginPage loginPage;
     LikeAnyPost likeAnyPost;
 
     @Test
     public void likeOnPostTest(){
-        likeAnyPost = PageFactory.initElements(driver,LikeAnyPost.class);
+         likeAnyPost = PageFactory.initElements(driver,LikeAnyPost.class);
         loginPage = PageFactory.initElements(driver,LoginPage.class);
         loginPage.emailField();
         ExtentTestManager.log("User enter email",logger);
