@@ -11,10 +11,10 @@ import reporting.ExtentTestManager;
 
 public class SignUpPageTest extends TestBase {
     private static final Logger logger = Logger.getLogger(com.facebook.loginpagetest.SignUpPageTest.class);
-    SignUpPage signUpPage;
+    private SignUpPage signUpPage;
 
     @Test(dataProviderClass = DataProviderTest.class,dataProvider = "getDataForRegistrationTest")
-    public void createAccountPageTest(String firstName, String lastName , String mobileNumber , String newPassword){
+    public void validateUserCanSignup(String firstName, String lastName , String mobileNumber , String newPassword, String month){
         signUpPage = PageFactory.initElements(driver,SignUpPage.class);
         windowsFullPageScrollDown();
         signUpPage.signUpLinks();
@@ -25,8 +25,8 @@ public class SignUpPageTest extends TestBase {
         signUpPage.mobileNumber(mobileNumber);
         ExtentTestManager.log(mobileNumber+" Enter in text field",logger);
         signUpPage.newPassword(newPassword);
-        ExtentTestManager.log(newPassword+" Enter in text field",logger);
-        signUpPage.monthDropDown();
+        ExtentTestManager.log(newPassword+"password entered in text field",logger);
+        signUpPage.selectMonthFromTheDropDown(month);
         ExtentTestManager.log("User change month",logger);
         signUpPage.dayDropDown();
         ExtentTestManager.log("User change day",logger);
@@ -45,7 +45,7 @@ public class SignUpPageTest extends TestBase {
     }
 
     @Test(dataProviderClass = DataProviderTest.class,dataProvider = "getDataForRegistrationTest")
-    public void createAccountPageforValidteUserTest(String firstName, String lastName , String mobileNumber , String newPassword){
+    public void createAccountPageforValidteUserTest(String firstName, String lastName , String mobileNumber , String newPassword, String month){
          signUpPage = PageFactory.initElements(driver,SignUpPage.class);
         windowsFullPageScrollDown();
         signUpPage.signUpLinks();
@@ -57,7 +57,7 @@ public class SignUpPageTest extends TestBase {
         ExtentTestManager.log(mobileNumber+" Enter in text field",logger);
         signUpPage.newPassword(newPassword);
         ExtentTestManager.log(newPassword+" Enter in text field",logger);
-        signUpPage.monthDropDown();
+        signUpPage.selectMonthFromTheDropDown(month);
         ExtentTestManager.log("User change month",logger);
         signUpPage.dayDropDown();
         ExtentTestManager.log("User change day",logger);

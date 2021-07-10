@@ -9,8 +9,8 @@ public class DataProviderTest {
     @DataProvider(name ="getDataForRegistrationTest")
     public static Object [][] getRegistrationData(){
         return new Object[][]{
-                {"tom","khan","123456","123456"},
-                {"Jerry","Jerry@gmail.com","123456","123456"}
+                {"tom","khan","123456","123456","March"},
+                {"Jerry","Jerry@gmail.com","123456","123456","February"}
         };
     }
 

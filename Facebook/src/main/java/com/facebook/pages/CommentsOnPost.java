@@ -25,7 +25,7 @@ public class CommentsOnPost extends TestBase {
         loginButton.click();
         commentsSection.click();
         sleepFor(3);
-        commentsFields.sendKeys("Allah vorosha");
+        commentsFields.sendKeys("hello");
         keyBoardEnter();
     }
 

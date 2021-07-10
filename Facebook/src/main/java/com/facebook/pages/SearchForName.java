@@ -27,7 +27,7 @@ public class SearchForName extends TestBase {
         emailField.sendKeys(emails);
         passwordField.sendKeys(pass);
         loginButton.click();
-        waitForElementToBeLocated(searchBox,20).sendKeys("mr alom");
+        waitForElementToBeLocated(searchBox,20).sendKeys("Mr.Raja");
         searchButton.click();
     }
 

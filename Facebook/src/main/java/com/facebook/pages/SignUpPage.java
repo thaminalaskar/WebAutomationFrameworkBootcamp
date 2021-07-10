@@ -24,7 +24,7 @@ public class SignUpPage extends TestBase {
     private WebElement newPassword;
 
     @FindBy(xpath = "//select[@id='month']")
-    private WebElement month;
+    private WebElement monthDropDown;
 
     @FindBy(xpath = "//select[@id='day']")
     private WebElement day;
@@ -60,8 +60,8 @@ public class SignUpPage extends TestBase {
         newPassword.sendKeys(newPasswords);
     }
 
-    public void monthDropDown() {
-        selectByVisibleText(month, "Mar");
+    public void selectMonthFromTheDropDown(String month) {
+        selectByVisibleText(monthDropDown, month);
     }
 
     public void dayDropDown() {
