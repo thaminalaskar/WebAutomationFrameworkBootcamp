@@ -10,7 +10,7 @@ public class ConnectDB {
 
     static {
         try {
-            connection = getConnection("root", "Moto1996", "peopleandtech");
+            connection = getConnection("root", "root1234", "peopleandtech");
             statement = connection.createStatement();
         } catch (SQLException throwables) {
             throwables.printStackTrace();

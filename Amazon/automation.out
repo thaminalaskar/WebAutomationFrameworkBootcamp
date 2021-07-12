@@ -1,39 +1,4 @@
-2021-07-12 18:07:250 INFO  LoginTest:42 - User click sign in button 
-2021-07-12 18:07:288 INFO  LoginTest:42 - User find Sign in image 
-2021-07-12 18:07:694 INFO  TestBase:243 - driver closed
-2021-07-12 18:07:134 INFO  RegistrationTest:42 - tom Enter successfully
-2021-07-12 18:07:210 INFO  RegistrationTest:42 - Tom@gmail.com Enter successfully
-2021-07-12 18:07:262 INFO  RegistrationTest:42 - 123456 Enter successfully
-2021-07-12 18:07:318 INFO  RegistrationTest:42 - 123456 Enter successfully
-2021-07-12 18:07:927 INFO  RegistrationTest:42 - User successfully create account
-2021-07-12 18:07:78 INFO  TestBase:243 - driver closed
-2021-07-12 18:07:498 INFO  RegistrationTest:42 - Jerry Enter successfully
-2021-07-12 18:07:573 INFO  RegistrationTest:42 - Jerry@gmail.com Enter successfully
-2021-07-12 18:07:630 INFO  RegistrationTest:42 - 123456 Enter successfully
-2021-07-12 18:07:688 INFO  RegistrationTest:42 - 123456 Enter successfully
-2021-07-12 18:07:224 INFO  RegistrationTest:42 - User successfully create account
-2021-07-12 18:07:372 INFO  TestBase:243 - driver closed
-2021-07-12 18:07:167 INFO  ProductSearchAndAddToCartTest:42 - Laptop type on search bar
-2021-07-12 18:07:91 INFO  ProductSearchAndAddToCartTest:42 - Clicked on search bar
-2021-07-12 18:07:578 INFO  ProductSearchAndAddToCartTest:42 - User Successfully click on Msi Laptop
-2021-07-12 18:07:677 INFO  TestBase:243 - driver closed
-2021-07-12 18:07:505 INFO  ProductSearchAndAddToCartTest:42 - Laptop type on search bar
-2021-07-12 18:07:886 INFO  ProductSearchAndAddToCartTest:42 - Clicked on search bar
-2021-07-12 18:07:905 INFO  ProductSearchAndAddToCartTest:42 - User Successfully click on Msi Laptop
-2021-07-12 18:07:798 INFO  TestBase:243 - driver closed
-2021-07-12 18:07:860 INFO  ProductSearchAndAddToCartTest:42 - Laptop type on search bar
-2021-07-12 18:07:379 INFO  ProductSearchAndAddToCartTest:42 - Clicked on search bar
-2021-07-12 18:07:540 INFO  TestBase:243 - driver closed
-2021-07-12 18:07:86 INFO  SearchTest:42 - Laptop type on search bar
-2021-07-12 18:07:543 INFO  SearchTest:42 - Clicked on search bar
-2021-07-12 18:07:565 INFO  SearchTest:42 - User get Laptop in search page
-2021-07-12 18:07:725 INFO  TestBase:243 - driver closed
-2021-07-12 18:07:737 INFO  TestBase:243 - driver closed
-2021-07-12 18:07:498 INFO  TestBase:243 - driver closed
-2021-07-12 18:07:164 INFO  NavigateBackTest:42 - User got as expected title
-2021-07-12 18:07:737 INFO  NavigateBackTest:42 - User got as expected shopping cart title
-2021-07-12 18:07:183 INFO  NavigateBackTest:42 - User succesfully come back home page
-2021-07-12 18:07:456 INFO  TestBase:243 - driver closed
-2021-07-12 18:07:760 INFO  TestBase:243 - driver closed
-2021-07-12 18:07:473 INFO  MenuOption:42 - All option selected Successfully
-2021-07-12 18:07:613 INFO  TestBase:243 - driver closed
+2021-07-12 19:07:93 INFO  SearchTest:42 - Laptop type on search bar
+2021-07-12 19:07:548 INFO  SearchTest:42 - Clicked on search bar
+2021-07-12 19:07:583 INFO  SearchTest:42 - User get Laptop in search page
+2021-07-12 19:07:930 INFO  TestBase:243 - driver closed
