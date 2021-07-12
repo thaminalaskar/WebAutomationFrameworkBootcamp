@@ -12,7 +12,7 @@ public class PoliticesLinkTest extends TestBase {
     private static final Logger logger = Logger.getLogger(PoliticesLinkTest.class);
 
     @Test
-    public void readPoliticsLinkNewsTest(){
+    public void validateUserCanReadPoliticsNews(){
         PoliticesPage politicesPage = PageFactory.initElements(driver,PoliticesPage.class);
         politicesPage.verifyPoliticesLink();
         ExtentTestManager.log("Read news politics page",logger);
