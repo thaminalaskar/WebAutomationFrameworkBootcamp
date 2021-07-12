@@ -1,4 +1,4 @@
-package com.citybank.loginpage;
+package com.citibank.loginpage;
 
 import common.TestBase;
 import org.openqa.selenium.WebElement;
@@ -18,11 +18,11 @@ public class LoginPage extends TestBase {
     public void verifyPassword(String password){
         userId.sendKeys(password);
     }
-    public void verifySignOnButton(){
+    public void clickOnSignOnButton(){
        signOnButton.click();
     }
 
-   public String titleOfHomePage(){
+   public String getTitleOfHomePage(){
       return getTitle();
    }
 

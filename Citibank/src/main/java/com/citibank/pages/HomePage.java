@@ -1,4 +1,4 @@
-package com.citybank.pages;
+package com.citibank.pages;
 
 import common.TestBase;
 import org.openqa.selenium.WebElement;
@@ -9,7 +9,7 @@ public class HomePage extends TestBase {
     @FindBy(xpath = "//citi-header/div[1]/div[1]/citi-banner2[1]/div[1]/div[1]/div[1]/div[1]/a[1]/img[1]")
     WebElement image ;
 
-    public String titleOfHomePage(){
+    public String getTitleOfHomePage(){
         return getTitle();
     }
     public boolean imageOnDisplay(){

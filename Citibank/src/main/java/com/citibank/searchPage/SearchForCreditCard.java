@@ -1,4 +1,4 @@
-package com.citybank.searchPage;
+package com.citibank.searchPage;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -24,7 +24,7 @@ public class SearchForCreditCard {
        finalSearchBox.click();
    }
 
-   public String searchResultTText(){
+   public String getSearchResultTText(){
       return travelCreditCardInformation.getText();
    }
 

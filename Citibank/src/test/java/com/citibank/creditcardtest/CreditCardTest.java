@@ -1,9 +1,8 @@
-package com.citybank.creditcardtest;
+package com.citibank.creditcardtest;
 
-import com.citybank.creditcardpage.CreditCardPage;
+import com.citibank.creditcardpage.CreditCardPage;
 import common.TestBase;
 import org.apache.log4j.Logger;
-import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -13,7 +12,7 @@ public class CreditCardTest extends TestBase {
     private static final Logger logger = Logger.getLogger(CreditCardTest.class);
     CreditCardPage creditCardPage;
     @Test
-    public void smallBusinessCreditCardTest(){
+    public void validateUserCanGetIntoSmallBusinessCreditCardPage(){
          creditCardPage = PageFactory.initElements(driver,CreditCardPage.class);
         sleepFor(3);
         creditCardPage.verifySmallBusinessCreditCard();
@@ -22,7 +21,7 @@ public class CreditCardTest extends TestBase {
     }
 
     @Test
-    public void BalanceTransferCreditCardTest(){
+    public void validateUserCanGetIntoBalanceTransferCreditCardPage(){
          creditCardPage = PageFactory.initElements(driver,CreditCardPage.class);
          sleepFor(3);
          creditCardPage.verifyBalanceTransferCreditCard();
@@ -32,7 +31,7 @@ public class CreditCardTest extends TestBase {
          ExtentTestManager.log("User in balance transfer credit card page",logger);
     }
     @Test
-    public void  verifyZeroPercentAprCreditCardTest(){
+    public void  validateUserCanGetIntoZeroPercentAprCreditCardPage(){
         creditCardPage = PageFactory.initElements(driver,CreditCardPage.class);
         sleepFor(3);
         creditCardPage.verifyZeroPercentAprCreditCard();
@@ -42,7 +41,7 @@ public class CreditCardTest extends TestBase {
         ExtentTestManager.log("User ZeroPercentAprCreditCard page",logger);
     }
     @Test
-    public void verifyRewardCreditCardTest(){
+    public void validateUserCanGetIntoRewardCreditCardPage(){
         creditCardPage = PageFactory.initElements(driver,CreditCardPage.class);
         sleepFor(3);
         creditCardPage.verifyRewardCreditCard();
@@ -53,7 +52,7 @@ public class CreditCardTest extends TestBase {
     }
 
     @Test
-    public void verifyCashBackCreditCardTest(){
+    public void validateUserCanGetIntoCashBackCreditCardTest(){
         creditCardPage = PageFactory.initElements(driver,CreditCardPage.class);
         sleepFor(3);
         creditCardPage.verifyCashBackCreditCard();
@@ -63,7 +62,7 @@ public class CreditCardTest extends TestBase {
         ExtentTestManager.log("User in cash back credit card page",logger);
     }
     @Test
-    public void verifyTravelCreditCardTest(){
+    public void validateUserCanGetIntoTravelCreditCardPage(){
         creditCardPage = PageFactory.initElements(driver,CreditCardPage.class);
         sleepFor(3);
         creditCardPage.verifyTravelCreditCard();
