@@ -17,8 +17,8 @@
             <!--            <class name="com.SignUpPageTest"></class>-->
             <!--            <class name="com.SearchForNameTest"></class>-->
             <!--            <class name="com.CommentsOnPostTest"></class>-->
-<!--                  <class name="com.SendAFriendRequestTest"></class>-->
-         <class name="com.facebook.loginpagetest.CommentsOnPostTest"></class>
+<!--                 <class name="com.SendAFriendRequestTest"></class>-->
+       <class name="com.facebook.loginpagetest.CommentsOnPostTest"></class>
         </classes>
     </test>
 
