@@ -1,2 +1,4 @@
-2021-07-01 17:07:528 INFO  LoginTest:42 - User successfully log in account
-2021-07-01 17:07:931 INFO  TestBase:243 - driver closed
+2021-07-12 17:07:377 INFO  LoginTest:42 - User successfully log in account
+2021-07-12 17:07:792 INFO  TestBase:243 - driver closed
+2021-07-12 17:07:94 INFO  PoliticesLinkTest:42 - Read news politics page
+2021-07-12 17:07:317 INFO  TestBase:243 - driver closed
