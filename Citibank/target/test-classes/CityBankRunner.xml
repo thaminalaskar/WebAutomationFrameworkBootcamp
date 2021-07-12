@@ -14,7 +14,7 @@
      <classes>
 <!--       <class name="com.LoginTest"></class>-->
 <!--        <class name="com.CreditCardTest"></class>-->
-         <class name="com.citybank.creditcardsearch.CreditCardSearchTest"></class>
+         <class name="com.citibank.creditcardsearch.CreditCardSearchTest"></class>
      </classes>
      
     </test>

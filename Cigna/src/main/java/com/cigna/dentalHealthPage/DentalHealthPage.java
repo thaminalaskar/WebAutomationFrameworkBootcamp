@@ -63,7 +63,7 @@ public class DentalHealthPage extends TestBase {
         sleepFor(3);
     }
 
-    public String titleOfDentalHealthPage(){
+    public String getTitleOfDentalHealthPage(){
         return getTitle();
     }
 

@@ -14,8 +14,8 @@ public class DataProviderTest {
     }
 
     //For valid user registration Page test data
-    @DataProvider(name ="getDataForRegistrationDataForInvalidteUserTest")
-    public static Object [][] getRegistrationDataForInvalidteUser(){
+    @DataProvider(name ="getDataForRegistrationDataForInvalidUserTest")
+    public static Object [][] getRegistrationDataForInvalidUser(){
         return new Object[][]{
                 {"",""},
         };

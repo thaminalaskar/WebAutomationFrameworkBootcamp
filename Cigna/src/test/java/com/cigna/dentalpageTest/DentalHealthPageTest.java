@@ -16,12 +16,12 @@ public class DentalHealthPageTest extends TestBase {
 
 
     @Test(dataProviderClass = DataProviderTest.class,dataProvider = "getDataForCignaPlan")
-    public void dentalPageTest(String zip,String firstName, String lastName,String email){
+    public void validateUserCanGetIntoDentalPage(String zip,String firstName, String lastName,String email){
         dentalHealthPage = PageFactory.initElements(driver,DentalHealthPage.class);
         dentalHealthPage.dentalHealthPage(zip,firstName,lastName,email);
         sleepFor(1);
         ExtentTestManager.log("User fillup from successfully",logger);
-        String expectedTitle = dentalHealthPage.titleOfDentalHealthPage();
+        String expectedTitle = dentalHealthPage.getTitleOfDentalHealthPage();
         String actualTitle ="Quote and Apply - Online Quoting & Enrollment System";
         Assert.assertEquals(expectedTitle,actualTitle,"Title did not match");
 

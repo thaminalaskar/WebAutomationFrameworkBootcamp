@@ -17,9 +17,9 @@ public class LoginPage extends TestBase {
     @FindBy(xpath = "//div[@id='alertmessage']")
     WebElement errorMessage;
     @FindBy(xpath = "//p[normalize-space()='Username required.']")
-    WebElement erroMessageForUserName;
+    WebElement errorMessageForUserName;
     @FindBy(xpath = "//p[normalize-space()='Password required.']")
-    WebElement erroMessageForPassword;
+    WebElement errorMessageForPassword;
 
 
     //Action
@@ -27,10 +27,10 @@ public class LoginPage extends TestBase {
         loginButton.click();
         sleepFor(2);
     }
-    public void clickOnUserName(String username){
+    public void enterUserName(String username){
         userName.sendKeys("Tom@gmail.com");
     }
-    public void clickOnPassword(String passwords){
+    public void enterPassword(String passwords){
         password.sendKeys("123456");
     }
 
@@ -38,16 +38,16 @@ public class LoginPage extends TestBase {
         loginButtonForSignIn.click();
     }
 
-    public boolean erroMessage(){
+    public boolean errorMessage(){
        return errorMessage.isDisplayed();
     }
 
     public String errorMessageForUsername(){
-       return errorMessage.getText();
+       return errorMessageForUserName.getText();
     }
 
     public String errorMessageForPassword(){
-       return erroMessageForPassword.getText();
+       return errorMessageForPassword.getText();
     }
 
 
