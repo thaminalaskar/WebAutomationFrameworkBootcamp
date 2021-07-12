@@ -31,7 +31,7 @@ public class SearchForName extends TestBase {
         searchButton.click();
     }
 
-    public boolean enterPersonName(){
+    public boolean PersonName(){
        return personName.isDisplayed();
     }
 
