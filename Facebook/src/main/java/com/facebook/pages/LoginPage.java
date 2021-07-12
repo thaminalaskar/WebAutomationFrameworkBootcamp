@@ -28,16 +28,16 @@ public class LoginPage extends TestBase {
   WebElement findYourAccountText;
 
 
-  public void emailField() {
+  public void enterEmailInField() {
     emailField.sendKeys("laskarthamina@gmail.com");
   }
 
 
-  public void passwordField() {
+  public void enterPasswordInField() {
     passwordField.sendKeys("Bootcamp123");
   }
 
-  public void loginButton() {
+  public void clickOnLoginButton() {
     loginButton.click();
   }
 
@@ -61,7 +61,7 @@ public class LoginPage extends TestBase {
    return findYourAccountText.isDisplayed();
   }
 
-  public void forgotButton(){
+  public void clickOnForgotButton(){
     forgotButton.click();
   }
 

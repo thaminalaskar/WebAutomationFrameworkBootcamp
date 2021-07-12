@@ -18,16 +18,16 @@ public class LikeOnPostTest extends TestBase {
     public void likeOnPostTest(){
          likeAnyPost = PageFactory.initElements(driver,LikeAnyPost.class);
         loginPage = PageFactory.initElements(driver,LoginPage.class);
-        loginPage.emailField();
+        loginPage.enterEmailInField();
         ExtentTestManager.log("User enter email",logger);
-        loginPage.passwordField();
+        loginPage.enterPasswordInField();
         ExtentTestManager.log("User enter pass",logger);
-        loginPage.loginButton();
+        loginPage.clickOnLoginButton();
         ExtentTestManager.log("User click loginButton",logger);
         sleepFor(5);
-        likeAnyPost.likeOnPost();
+        likeAnyPost.likePost();
         ExtentTestManager.log("User like on post",logger);
-        Assert.assertTrue( likeAnyPost.likeOnPost());
+        Assert.assertTrue( likeAnyPost.likePost());
         ExtentTestManager.log("User succesfully like on post",logger);
     }
 

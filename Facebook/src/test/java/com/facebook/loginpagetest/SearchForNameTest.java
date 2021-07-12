@@ -15,7 +15,7 @@ public class SearchForNameTest extends TestBase {
     public void logInAndSearchForNameTest(){
          searchForName = PageFactory.initElements(driver,SearchForName.class);
          searchForName.loginHomePage(prop.getProperty("username"),prop.getProperty("password"));
-         Assert.assertTrue(searchForName.personName());
+         Assert.assertTrue(searchForName.enterPersonName());
          ExtentTestManager.log("User got person name on people page",logger);
          ExtentTestManager.log("User got expected person in search page",logger);
     }

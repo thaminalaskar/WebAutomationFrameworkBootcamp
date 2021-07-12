@@ -44,35 +44,33 @@ public class SignUpPage extends TestBase {
     private WebElement signUpButton;
 
 
-    public void firstName(String firstNames) {
+    public void enterFirstName(String firstNames) {
         firstName.sendKeys(firstNames);
     }
 
-    public void lastName(String lastNames) {
+    public void enterLastName(String lastNames) {
         lastName.sendKeys(lastNames);
     }
 
-    public void mobileNumber(String mobileNumber) {
+    public void enterMobileNumber(String mobileNumber) {
         mobileAndEmail.sendKeys(mobileNumber);
     }
 
-    public void newPassword(String newPasswords) {
+    public void enterNewPassword(String newPasswords) {
         newPassword.sendKeys(newPasswords);
     }
 
-    public void selectMonthFromTheDropDown(String month) {
-        selectByVisibleText(monthDropDown, month);
+    public void selectMonthFromTheDropDown(String month) { selectByVisibleText(monthDropDown, month);}
+
+    public void selectDayFromTheDropDown() {
+        selectByVisibleText(day, "9");
     }
 
-    public void dayDropDown() {
-        selectByVisibleText(day, "6");
+    public void selectYearFromDropDown() {
+        selectByVisibleText(year, "2005");
     }
 
-    public void yearDropDown() {
-        selectByVisibleText(year, "2006");
-    }
-
-    public void signUpLinks() {
+    public void clickOnSignUpLinks() {
         signUpLink.click();
     }
 
@@ -86,7 +84,7 @@ public class SignUpPage extends TestBase {
         customRadioButton.click();
     }
 
-    public void signUpButton() {
+    public void clickOnSignUpButton() {
         signUpButton.click();
     }
     public boolean signUpButtonDisplay() {

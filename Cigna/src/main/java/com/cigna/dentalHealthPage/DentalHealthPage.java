@@ -56,7 +56,7 @@ public class DentalHealthPage extends TestBase {
         handleNewTab(driver);
         waitForElementToBeLocated(myHomeZipCode,10).sendKeys(zip);
         sleepFor(2);
-        selectValueFromDropDown(coverageStartDate,"8/1/2021");
+        selectValueFromDropDown(coverageStartDate,"9/10/2021");
         firstName.sendKeys(firstNames);
         lastName.sendKeys(lastNames);
         selectValueFromDropDown(phone,"Home");

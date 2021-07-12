@@ -12,7 +12,7 @@ public class LikeAnyPost {
     WebElement totalLike;
 
 
-  public boolean likeOnPost(){
+  public boolean likePost(){
       likeButton.click();
       return totalLike.isDisplayed();
 
