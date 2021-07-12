@@ -13,10 +13,10 @@ public class CommentsOnPostTest extends TestBase {
     CommentsOnPost commentsOnPost;
 
     @Test
-    public void commentsOnPostTest(){
+    public void validateUserCanCommentsOnPost(){
         commentsOnPost = PageFactory.initElements(driver, CommentsOnPost.class);
         commentsOnPost.loginHomePage(prop.getProperty("username"),prop.getProperty("password"));
-        String expected = commentsOnPost.titleOfHomePage();
+        String expected = commentsOnPost.getTitleOfHomePage();
         String actual = "Facebook";
         Assert.assertEquals(expected,actual,"Title did not match");
         ExtentTestManager.log("User write on comments",logger);

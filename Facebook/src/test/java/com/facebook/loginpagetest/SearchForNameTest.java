@@ -12,7 +12,7 @@ public class SearchForNameTest extends TestBase {
     private static final Logger logger = Logger.getLogger(LoginTest.class);
     SearchForName searchForName;
     @Test
-    public void logInAndSearchForNameTest(){
+    public void validateUserCanLogInAndSearchForName(){
          searchForName = PageFactory.initElements(driver,SearchForName.class);
          searchForName.loginHomePage(prop.getProperty("username"),prop.getProperty("password"));
          Assert.assertTrue(searchForName.enterPersonName());

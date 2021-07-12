@@ -12,7 +12,7 @@ public class SendAFriendRequestTest extends TestBase {
     private static final Logger logger = Logger.getLogger(SearchForNameTest.class);
     SendAFriendRequest sendAFriendRequest;
     @Test
-    public void sendFriendReqTest(){
+    public void validateUserCanSendFriendRequest(){
             sendAFriendRequest= PageFactory.initElements(driver,SendAFriendRequest.class);
             sendAFriendRequest.loginHomePage(prop.getProperty("username"),prop.getProperty("password"));
             ExtentTestManager.log("User got expected person in search page",logger);

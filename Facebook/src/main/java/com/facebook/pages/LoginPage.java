@@ -49,7 +49,7 @@ public class LoginPage extends TestBase {
     return facebookLogo.isDisplayed();
   }
 
-  public String titleOfLoginPage() {
+  public String getTitleOfLoginPage() {
     return getTitle();
   }
 

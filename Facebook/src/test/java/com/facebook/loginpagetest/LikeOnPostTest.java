@@ -25,9 +25,9 @@ public class LikeOnPostTest extends TestBase {
         loginPage.clickOnLoginButton();
         ExtentTestManager.log("User click loginButton",logger);
         sleepFor(5);
-        likeAnyPost.likePost();
+        likeAnyPost.userCanLikePost();
         ExtentTestManager.log("User like on post",logger);
-        Assert.assertTrue( likeAnyPost.likePost());
+        Assert.assertTrue( likeAnyPost.userCanLikePost());
         ExtentTestManager.log("User succesfully like on post",logger);
     }
 

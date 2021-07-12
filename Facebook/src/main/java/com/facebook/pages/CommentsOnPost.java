@@ -29,7 +29,7 @@ public class CommentsOnPost extends TestBase {
         keyBoardEnter();
     }
 
-    public String titleOfHomePage(){
+    public String getTitleOfHomePage(){
         return getTitle();
     }
 

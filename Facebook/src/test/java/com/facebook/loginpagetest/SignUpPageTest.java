@@ -45,7 +45,7 @@ public class SignUpPageTest extends TestBase {
     }
 
     @Test(dataProviderClass = DataProviderTest.class,dataProvider = "getDataForRegistrationTest")
-    public void createAccountPageforValidteUserTest(String firstName, String lastName , String mobileNumber , String newPassword, String month){
+    public void validateUserCanCreateAccount(String firstName, String lastName , String mobileNumber , String newPassword, String month){
          signUpPage = PageFactory.initElements(driver,SignUpPage.class);
         windowsFullPageScrollDown();
         signUpPage.clickOnSignUpLinks();
