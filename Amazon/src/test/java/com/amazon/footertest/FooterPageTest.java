@@ -10,28 +10,28 @@ import reporting.ExtentTestManager;
 
 public class FooterPageTest extends TestBase {
     private static final Logger logger = Logger.getLogger(FooterPageTest.class);
-    FooterPage fotterPage;
+    FooterPage footerPage;
 
 
     @Test(priority = 1)
-    public void validateUserCanClickCareerLinkTest(){
-           fotterPage = PageFactory.initElements(driver, FooterPage.class);
-           fotterPage.careersLink();
+    public void validateUserCanClickOnCareerLink(){
+           footerPage = PageFactory.initElements(driver, FooterPage.class);
+           footerPage.careersLink();
            ExtentTestManager.log("click CareerLink properly",logger);
     }
 
     @Test(priority = 2)
-    public void validateCareerLinkTitleTest(){
-        fotterPage = PageFactory.initElements(driver, FooterPage.class);
-        String expected = fotterPage.careersLinkText();
+    public void validateCareerLinkTitle(){
+        footerPage = PageFactory.initElements(driver, FooterPage.class);
+        String expected = footerPage.careersLinkText();
         String actual = "Amazon.jobs: Help us build Earth’s most customer-centric company.";
         Assert.assertEquals(expected,actual,"Title did not Match properly");
         ExtentTestManager.log("Title Find as Expected",logger);
     }
     @Test(priority = 2)
-    public void validateBlogLinkTitleTest(){
-        fotterPage = PageFactory.initElements(driver, FooterPage.class);
-        String expected = fotterPage.blogLinkTitle();
+    public void validateBlogLinkTitle(){
+        footerPage = PageFactory.initElements(driver, FooterPage.class);
+        String expected = footerPage.blogLinkTitle();
         String actual = "About Amazon";
         Assert.assertEquals(expected,actual,"Title did not Match properly");
         ExtentTestManager.log("Title Find as Expected",logger);

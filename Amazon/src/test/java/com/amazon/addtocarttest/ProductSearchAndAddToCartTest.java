@@ -36,7 +36,7 @@ public class ProductSearchAndAddToCartTest extends TestBase {
         String expectedTitle ="Amazon.com: 2020 Newest Acer Aspire 5 Slim Laptop 15.6\" FHD IPS Display, AMD Ryzen 3 3200u (up to 3.5GHz), Vega 3 Graphics, 8GB RAM DDR4, 256GB PCIe SSD, Backlit KB,WiFi,HDMI, Win10 w/Ghost Manta Accessories: Computers & Accessories";
         String actualTitle = getTitle();
         Assert.assertEquals(expectedTitle,actualTitle,"Title did not match");
-        productSearchAndAddToCart.addToCartButton();
+        productSearchAndAddToCart.clickOnCartButton();
         ExtentTestManager.log("User successfully add to cart the product",logger);
     }
 
@@ -56,10 +56,10 @@ public class ProductSearchAndAddToCartTest extends TestBase {
         String actualTitle = getTitle();
         Assert.assertEquals(expectedTitle,actualTitle,"Title did not match");
         sleepFor(1);
-        productSearchAndAddToCart.addToCartButton();
+        productSearchAndAddToCart.clickOnAddToCartButton();
         ExtentTestManager.log("User successfully add to cart the product",logger);
-        productSearchAndAddToCart.cartButton();
-        productSearchAndAddToCart.deleteButton();
+        productSearchAndAddToCart.clickOnCartButton();
+        productSearchAndAddToCart.clickOnDeleteButton();
         ExtentTestManager.log("User successfully remove product from add to cart ",logger);
 
     }

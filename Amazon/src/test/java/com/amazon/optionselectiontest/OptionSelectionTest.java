@@ -13,14 +13,14 @@ public class OptionSelectionTest extends TestBase {
 
 
     @Test(enabled = false)
-    public void validateAllOption(){
+    public void validateUserCanSelectAllOptions(){
         departmentOptionSection = PageFactory.initElements(driver,DepartmentOptionSection.class);
         departmentOptionSection.clickOnShopAllDealsLink();
         ExtentTestManager.log("User successfully select department all options",logger);
     }
 
     @Test
-    public void validateAllOptionAndClearIteam(){
+    public void validateUserCanSelectAllOptionAndClearAllOptionsItem(){
         departmentOptionSection = PageFactory.initElements(driver,DepartmentOptionSection.class);
         departmentOptionSection.clickOnShopAllDealsLink();
         ExtentTestManager.log("User successfully select department all options",logger);

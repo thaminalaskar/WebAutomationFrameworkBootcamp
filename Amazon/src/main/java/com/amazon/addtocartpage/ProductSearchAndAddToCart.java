@@ -46,16 +46,16 @@ public class ProductSearchAndAddToCart {
        return msiLaptopImage.isDisplayed();
     }
 
-    public void addToCartButton(){
+    public void clickOnAddToCartButton(){
         addToCartButton.click();
         noThanksButton.click();
     }
 
-    public void cartButton(){
+    public void clickOnCartButton(){
         cartButton.click();
     }
 
-    public void deleteButton(){
+    public void clickOnDeleteButton(){
         deleteButton.click();
     }
 

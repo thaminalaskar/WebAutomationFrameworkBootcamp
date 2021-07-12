@@ -15,7 +15,7 @@ public class NavigationCheck extends TestBase {
     @FindBy(css = "a#hlb-view-cart-announce")
     WebElement cartButton;
 
-     public String titleOfAmazonHomePage(){
+     public String getTitleOfAmazonHomePage(){
          return getTitle();
      }
      public String addToCartBook(){

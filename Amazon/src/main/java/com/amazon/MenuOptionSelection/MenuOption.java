@@ -12,7 +12,7 @@ public class MenuOption extends TestBase {
     @FindBy(xpath = "//option[contains(text(),'Audible Books & Originals')]")
     private WebElement audioBook;
 
-    public void validateMobileApp(){
+    public void validateMenuOptions(){
         selectByVisibleText(allOptions,"All Departments");
         sleepFor(1);
         selectByVisibleText(allOptions,"Audible Books & Originals");

@@ -14,9 +14,9 @@ public class NavigateBackTest extends TestBase {
     NavigationCheck navigationCheck;
 
     @Test
-    public void navigateBackTest(){
+    public void validateUserCanNavigateBack(){
           navigationCheck = PageFactory.initElements(driver,NavigationCheck.class);
-        String expected = navigationCheck.titleOfAmazonHomePage();
+        String expected = navigationCheck.getTitleOfAmazonHomePage();
         String actual ="Amazon.com. Spend less. Smile more.";
         Assert.assertEquals(expected,actual,"title did not match");
         ExtentTestManager.log("User got as expected title",logger);

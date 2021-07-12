@@ -15,7 +15,7 @@ public class ShopByDepartmentTest extends TestBase {
     ShopByDepartment shopByDepartment;
 
     @Test(enabled = false)
-    public void tVDepartmentTest(){
+    public void validateUserSelectTvDepartment(){
       shopByDepartment = PageFactory.initElements(driver,ShopByDepartment.class);
         shopByDepartment.allOptionButtonClick();
         shopByDepartment.electricButtonClick();
@@ -26,7 +26,7 @@ public class ShopByDepartmentTest extends TestBase {
 
 
     @Test
-    public void validateAddToCartTest(){
+    public void validateUserCanAddToCart(){
          shopByDepartment = PageFactory.initElements(driver,ShopByDepartment.class);
          shopByDepartment.addToCardTV();
          String expectedTitle = getTitle();

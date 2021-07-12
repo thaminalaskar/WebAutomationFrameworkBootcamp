@@ -12,7 +12,7 @@ public class LoginTest extends TestBase {
     private static final Logger logger = Logger.getLogger(LoginTest.class);
     LoginPage loginPage;
     @Test
-    public void validateLogInPage(){
+    public void validateUserCanLogIntoLoginPage(){
          loginPage = PageFactory.initElements(driver,LoginPage.class);
         loginPage.clickOnLoginButton();
         ExtentTestManager.log("User click sign in button ",logger);

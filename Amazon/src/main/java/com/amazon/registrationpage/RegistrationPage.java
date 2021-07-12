@@ -34,10 +34,10 @@ public class RegistrationPage {
 
 
 
-    public void clickObSignInButton(){
+    public void clickOnSignInButton(){
         signInButton.click();
     }
-    public void clickAmazonAccountlink(){
+    public void clickOnAmazonAccountlink(){
         createAmazonAccount.click();
     }
 
@@ -58,7 +58,7 @@ public class RegistrationPage {
        return createAccountText.getText();
     }
 
-    public void createAccoutButton(){
+    public void clickOnAccountButton(){
         createAccount.click();
     }
 

@@ -18,8 +18,8 @@ public class RegistrationTest extends TestBase {
     @Test(dataProviderClass = DataProviderTest.class,dataProvider = "getDataForRegistrationTest",enabled = true,priority = 1)
     public void validateUserCanRegisterAccountTest(String name , String email , String password , String reEnterPass){
         registrationPage = PageFactory.initElements(driver,RegistrationPage.class);
-        registrationPage.clickObSignInButton();
-        registrationPage.clickAmazonAccountlink();
+        registrationPage.clickOnSignInButton();
+        registrationPage.clickOnAmazonAccountlink();
         registrationPage.UserName(name);
         ExtentTestManager.log(name+" Enter successfully",logger);
         registrationPage.UserEmail(email);
@@ -28,7 +28,7 @@ public class RegistrationTest extends TestBase {
         ExtentTestManager.log(password+" Enter successfully",logger);
         registrationPage.UserReEnterPass(reEnterPass);
         ExtentTestManager.log(reEnterPass+" Enter successfully",logger);
-        registrationPage.createAccoutButton();
+        registrationPage.clickOnAccountButton();
         ExtentTestManager.log("User successfully create account",logger);
         sleepFor(5);
     }
@@ -36,8 +36,8 @@ public class RegistrationTest extends TestBase {
     @Test(enabled = false,priority = 2)
     public void validateCreateAccountText(){
          registrationPage = PageFactory.initElements(driver,RegistrationPage.class);
-        registrationPage.clickObSignInButton();
-        registrationPage.clickAmazonAccountlink();
+        registrationPage.clickOnAccountButton();
+        registrationPage.clickOnAmazonAccountlink();
         String expectedText = registrationPage.createAccountText();
         String actualText = "Create account";
         Assert.assertEquals(expectedText,actualText,"Text did not match");
@@ -47,10 +47,10 @@ public class RegistrationTest extends TestBase {
     @Test(enabled = false,priority = 3)
     public void validateCreateAccountPageWithProperErrorMessageTest(){
         registrationPage = PageFactory.initElements(driver,RegistrationPage.class);
-        registrationPage.clickObSignInButton();
-        registrationPage.clickAmazonAccountlink();
+        registrationPage.clickOnSignInButton();
+        registrationPage.clickOnAmazonAccountlink();
         String expectedText = registrationPage.createAccountText();
-        registrationPage.createAccoutButton();
+        registrationPage.clickOnAccountButton();
 
         sleepFor(1);
         String errorMessageForName ="Enter your name";
@@ -74,8 +74,8 @@ public class RegistrationTest extends TestBase {
     @Test(dataProviderClass = DataProviderTest.class,dataProvider = "getInvalidateDataForRegistrationTest",enabled = false,priority = 4)
     public void UserWriteWrongDataInCreateAccountPageTest(String name , String email , String password , String reEnterPass){
         registrationPage = PageFactory.initElements(driver,RegistrationPage.class);
-        registrationPage.clickObSignInButton();
-        registrationPage.clickAmazonAccountlink();
+        registrationPage.clickOnSignInButton();
+        registrationPage.clickOnAmazonAccountlink();
         registrationPage.UserName(name);
         ExtentTestManager.log(name+" Enter successfully",logger);
         registrationPage.UserEmail(email);
@@ -84,7 +84,7 @@ public class RegistrationTest extends TestBase {
         ExtentTestManager.log(password+" Enter successfully",logger);
         registrationPage.UserReEnterPass(reEnterPass);
         ExtentTestManager.log(reEnterPass+" Enter successfully",logger);
-        registrationPage.createAccoutButton();
+        registrationPage.clickOnSignInButton();
         ExtentTestManager.log("User can not create account to provide wrong data",logger);
         sleepFor(5);
     }
